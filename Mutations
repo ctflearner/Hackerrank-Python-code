@@ -1,0 +1,10 @@
+def mutate_string(string, position, character):
+##My code
+    string = string[:position]+ character+ string[position+1:]  ## slicing and joining is done over here (ex-string = string[:5] + "k" + string[6:]
+    return string
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
