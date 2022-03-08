@@ -1,0 +1,22 @@
+def print_rangoli(size):
+    # your code goes here
+    #creating a list of all the alphabets 
+    #97-123 is the ascii value of a-z
+    l1=list(map(chr,range(97,123)))
+    #below line is used to create the middle pattern and to know the size of pattern
+    x=l1[size-1::-1]+l1[1:n]
+    #joining with '-' and also calculating its length
+    m=len('-'.join(x))
+    # Running the for loop for the first half of the pattern with the middle line
+    for i in range(1,size):
+        print('-'.join(l1[n-1:n-i:-1]+l1[n-i:n]).center(m,'-'))
+    #Running the for loop for the second half of the pattern from the middle line    
+    for i in range(size,0,-1):
+        print('-'.join(l1[n-1:n-i:-1]+l1[n-i:n]).center(m,'-'))
+  
+
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
+    
+    
