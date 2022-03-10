@@ -1,0 +1,21 @@
+def average(array):
+    # your code goes here
+    #To find the distinct number from the array we use set function
+    distinct_1=set(array)
+    #To find the length of the distinct array
+    length=len(distinct_1)
+    #Running for loop to calculate the sum of the distinct array
+    for i in range(length):
+        sum_1=sum(distinct_1)
+    #For calculating the average of the above sum    
+    avg1=sum_1/length
+    #Returning the average of the sum
+    return avg1    
+    
+    
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
