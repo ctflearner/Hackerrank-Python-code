@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    # Taking total no of stamps
+    n = int(input())
+    #creating empty list
+    lst=[]
+    #Running loop till the total no of stamps and taking input with appending it to list
+    for i in range(0,n):
+        country= input()
+        lst.append(country)
+        
+    #using set function to find the distinct element in a list
+    distinct_1 = set(lst)  
+    #finding the length of the distinct length 
+    length=len(distinct_1)
+    #printing the sum of the list/length of the distinct list
+    print(length)
+    
