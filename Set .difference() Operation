@@ -1,0 +1,10 @@
+   
+english_no = int(input())
+english_roll= set(input().split())
+
+french_no = int(input())
+french_roll= set(input().split())
+
+diff = english_roll.difference(french_roll)
+
+print(len(diff))    
