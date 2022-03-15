@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+
+#No of Students who have subscribed to the English newspaper
+english_no=int(input())
+#Space seperated roll numbers of those students
+english_news=set(input().split())
+
+#No of Students who have subscribed to the French newspaper
+french_no=int(input())
+#Space seperated roll numbers of those students
+french_news=set(input().split())
+
+#Total number of students who have subscriptions to both English and French newspapers
+Checking_intersection=english_news.intersection(french_news)
+print(len(Checking_intersection))
